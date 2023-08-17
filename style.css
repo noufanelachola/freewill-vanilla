@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,4 +14,81 @@
     --dark-blue-color: #2991D3;
 
     --yellow-color: #FFB800;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-family: "Poppins",sans-serif;
+}
+.headerBtn {
+    background-image: linear-gradient(to bottom right , var(--primary-color) , var(--dark-blue-color));
+    color: white;
+    transition: transform 0.5s ease-in-out;
+}
+.appnmntSimpleBtn{
+    border: 0;
+    border-radius: 10rem;
+    padding: 0.5rem 1rem;
+    gap: 0.3rem;
+}
+
+
+/* .content {
+    max-width: 1920px;
+    align-self: center;
+} */
+
+
+/* ----------NAVIGATION_BAR---------- */
+.navCont{
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0.5rem 1rem;
+}
+
+.logo {
+    /* margin-bottom: -0.25rem; */
+    height: 2.5rem;
+}
+.logo .headerLogo {
+    height: 100%;
+    width: 100%;
+}
+
+.links {
+    display: flex;
+    gap: 0.5rem;
+}
+.links a {
+    text-decoration: none;
+    color: black;
+}
+.links a:hover {
+    color: var(--dark-blue-color);
+}
+
+.headerBtn:hover {
+    transform: scale(1.1);
+}
+.headerBtn img {
+    height: 0.85rem;
+}
+.headerBtn p {
+    font-size: 0.75rem;
+    font-weight: 300;
+}
+
+.menu {
+    height: 1.5rem;
+    display: none;
 }
