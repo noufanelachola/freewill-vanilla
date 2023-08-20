@@ -15,3 +15,18 @@ menu.addEventListener("click",toggleFunc);
 linksArray.forEach((link,i) => {
     link.addEventListener("click",toggleFunc);
 });
+
+
+
+// -----------SWIPER_1----------
+const swiper = new Swiper("#swiper-1", {
+        slidesPerView: 1,
+        loop: true,
+        spaceBetween: 50,
+        centeredSlides:true,
+        // autoplay: {
+        //     delay: 1500, 
+        //     disableOnInteraction: false,
+        //     stopOnLastSlide: false,
+        // },
+});
