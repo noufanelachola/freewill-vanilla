@@ -200,15 +200,36 @@ header {
 
 /* ------------HERO_SECTION------------ */
 #hero {
-    min-height: 100dvh;
     position: relative;
     background-image: url(assets/bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.heroDiv {
+    flex-grow: 1;
 }
 
 .heroContent{
-    padding: 0 1rem 0 1rem;
+    padding: 4rem 1rem 0 1rem;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    
+}
+
+.heroCont {
+    width: 60%;
+    min-height: 80%;
+    
+    display: flex;
+    flex-direction: column;
+    
+    
+    position: relative;
+    z-index: 100;
 }
 
 .heroLogo{
@@ -216,17 +237,20 @@ header {
     display: inline-block;
 }
 
+.heroButtons {
+    margin-top: 1rem;
+}
 
 .testimonial {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     border: 2px solid var(--primary-color);
     padding: 0.5rem;
     overflow-x: hidden;
 
-    position: relative;
-    z-index: 100;
 }
 #swiper-1 {
-    width: 100%;
+    max-width: 100%;
 }
 #swiper-1 .swiper-wrapper {
     display: flex;
@@ -234,13 +258,16 @@ header {
 }
 .swiper .swiper-slide {
     display: flex;
-    min-width: 100%;
-    /* min-height: 100%; */
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    /* min-width: 100%; */
 
 } 
 .swiper .swiper-slide .testimonialCont{
     display: flex;
-    height: auto;
+    align-items: center;
+    gap: 0.5rem;
 }
 .swiper .swiper-slide .testimonialPhoto {
     height: 100%;
@@ -255,6 +282,21 @@ header {
     max-width: 100%;
     height: auto;
 }
+.swiper .swiper-slide .testimonialDetails .testimonialStars {
+    display: flex;
+    align-items: center;
+}
+
+.heroImg {
+    width: 40%;
+    min-height: 80%;   
+    position: relative;
+    z-index: 0; 
+}
+.heroImg img{
+    width: 100%;
+}
+
 
 
 .shapeDivider {
