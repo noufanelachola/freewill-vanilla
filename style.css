@@ -246,7 +246,8 @@ header {
     margin-top: 3rem;
     margin-bottom: 3rem;
     border: 2px solid var(--primary-color);
-    border-radius: 0.5rem;
+    border-radius: 1.12rem 2.68rem 2.68rem 2.68rem;
+
     padding: 0.5rem;
     overflow-x: hidden;
 
@@ -269,7 +270,6 @@ header {
 } 
 .swiper .swiper-slide .testimonialCont{
     display: flex;
-    align-items: center;
     gap: 0.5rem;
 }
 .swiper .swiper-slide .testimonialPhoto {
@@ -283,15 +283,18 @@ header {
     display: flex;
     align-items: end;
 
-    border-radius: 11px 4px 4px 33px;
-}
-.swiper .swiper-slide .testimonialPhoto img {
-    max-width: 100%;
-    height: auto;
+    border-radius: 0.68rem 0.25rem 0.25rem 2.06rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
 }
 .swiper .swiper-slide .testimonialDetails .testimonialStars {
     display: flex;
     align-items: center;
+}
+.testimonialPara {
+    margin-top: 0.5rem;
 }
 
 .heroImg {
