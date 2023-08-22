@@ -65,13 +65,28 @@ body {
     font-weight: bold;
 }
 
+
 .para {
     font-size: 1.2rem;
+}
+.paraBold {
+    font-weight: 500;
 }
 
 .content {
     max-width: 1920px;
     margin: 0 auto;
+}
+
+@media (width <= 800px) {
+    .title {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .para{
+        font-size: 0.9rem;
+    }
 }
 
 
@@ -137,7 +152,7 @@ header {
     cursor: pointer;
 
     position: relative;
-    z-index: 110;
+    z-index: 1010;
 }
 /* .menuImg {
     height: 0.5rem;
@@ -149,7 +164,7 @@ header {
 @media (width <= 810px){
     .links {
         position: fixed;
-        z-index: 100;
+        z-index: 1000;
         top: 0;
         left: 0;
 
@@ -158,10 +173,11 @@ header {
 
         padding-inline:1rem;
         padding-top: clamp(5rem , 15vh , 50rem);
+        padding-bottom: 3rem;
 
         background-color: var(--primary-color);
 
-        height: 100dvh;
+        min-height: 100dvh;
         width: 100vw;
 
         flex-direction: column;
@@ -200,15 +216,34 @@ header {
 
 /* ------------HERO_SECTION------------ */
 #hero {
-    min-height: 100dvh;
     position: relative;
     background-image: url(assets/bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
+
 .heroContent{
-    padding: 0 1rem 0 1rem;
+    padding: 4rem 1rem 0 1rem;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    
+    
+}
+
+.heroCont {
+    width: 60%;
+    min-height: 80%;
+    
+    display: flex;
+    flex-direction: column;
+    
+    
+    position: relative;
+    z-index: 100;
 }
 
 .heroLogo{
@@ -216,17 +251,23 @@ header {
     display: inline-block;
 }
 
+.heroButtons {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
 
 .testimonial {
+    margin-top: auto;
+    margin-bottom: 3rem;
     border: 2px solid var(--primary-color);
+    border-radius: 1.12rem 2.68rem 2.68rem 2.68rem;
+
     padding: 0.5rem;
     overflow-x: hidden;
 
-    position: relative;
-    z-index: 100;
 }
 #swiper-1 {
-    width: 100%;
+    max-width: 100%;
 }
 #swiper-1 .swiper-wrapper {
     display: flex;
@@ -234,27 +275,102 @@ header {
 }
 .swiper .swiper-slide {
     display: flex;
-    min-width: 100%;
-    /* min-height: 100%; */
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    /* min-width: 100%; */
+    overflow: hidden;
 
 } 
 .swiper .swiper-slide .testimonialCont{
     display: flex;
-    height: auto;
+    gap: 0.5rem;
 }
 .swiper .swiper-slide .testimonialPhoto {
     height: 100%;
+    min-height: 140px;
+    min-width: 110px;
     width: auto;
     max-width: 6rem;
     overflow: hidden;
     background-color: var(--primary-color);
     display: flex;
     align-items: end;
+
+    border-radius: 0.68rem 0.25rem 0.25rem 2.06rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
 }
-.swiper .swiper-slide .testimonialPhoto img {
-    max-width: 100%;
-    height: auto;
+.swiper .swiper-slide .testimonialDetails .testimonialStars {
+    display: flex;
+    align-items: center;
 }
+.testimonialPara {
+    margin-top: 0.5rem;
+}
+
+.heroImg {
+    width: 40%;
+    /* min-height: 80%;    */
+    position: relative;
+    z-index: 0; 
+}
+.heroImg img{
+    width: 100%;
+}
+
+@media (width <= 1140px) {
+    .heroContent{
+        min-height: 100dvh;
+    }
+    .heroCont{
+        width: 100%;
+        /* background-image: url(assets/kid-desk.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center right; */
+    }
+    .heroImg{
+        /* position: absolute;
+        bottom: 0; */
+        /* top: 0; */
+        /* right: 0; */
+        /* width: 20rem; */
+        display: none;
+    }
+    /* .heroImg img {
+        height: 100%;
+        width: 100%;
+    } */
+}
+
+@media (width <= 800px){
+    .heroContent{
+        padding-top: 2rem;
+    }
+    .heroLogo {
+        height: 2.5rem;
+    }
+    .testimonial {
+        border-radius: 0.48rem 1.15rem 1.15rem 1.15rem;
+        /* margin-top: 2rem; */
+    }
+    .swiper .swiper-slide .testimonialPhoto {
+        min-height: 70px;
+        min-width: 60px;
+        border-radius: 0.29rem 0.1rem 0.1rem 0.88rem;
+    }
+    .testimonialPara {
+        margin-top: 0;
+    }
+}
+
+@media (width <= 600px){
+}
+
+
 
 
 .shapeDivider {
@@ -285,3 +401,11 @@ header {
         height: 76px;
     }
 }
+
+
+
+/* ----------ABOUT_SECTION---------- */
+#about {
+    background-color: white;
+}
+
