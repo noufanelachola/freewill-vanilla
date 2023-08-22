@@ -65,13 +65,28 @@ body {
     font-weight: bold;
 }
 
+
 .para {
     font-size: 1.2rem;
+}
+.paraBold {
+    font-weight: 500;
 }
 
 .content {
     max-width: 1920px;
     margin: 0 auto;
+}
+
+@media (width <= 800px) {
+    .title {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .para{
+        font-size: 0.9rem;
+    }
 }
 
 
@@ -209,15 +224,13 @@ header {
     flex-direction: column;
 }
 
-.heroDiv {
-    flex-grow: 1;
-}
 
 .heroContent{
     padding: 4rem 1rem 0 1rem;
     display: flex;
     flex-direction: row;
     height: 100%;
+    
     
 }
 
@@ -240,10 +253,11 @@ header {
 
 .heroButtons {
     margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .testimonial {
-    margin-top: 3rem;
+    margin-top: auto;
     margin-bottom: 3rem;
     border: 2px solid var(--primary-color);
     border-radius: 1.12rem 2.68rem 2.68rem 2.68rem;
@@ -299,13 +313,63 @@ header {
 
 .heroImg {
     width: 40%;
-    min-height: 80%;   
+    /* min-height: 80%;    */
     position: relative;
     z-index: 0; 
 }
 .heroImg img{
     width: 100%;
 }
+
+@media (width <= 1140px) {
+    .heroContent{
+        min-height: 100dvh;
+    }
+    .heroCont{
+        width: 100%;
+        /* background-image: url(assets/kid-desk.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center right; */
+    }
+    .heroImg{
+        /* position: absolute;
+        bottom: 0; */
+        /* top: 0; */
+        /* right: 0; */
+        /* width: 20rem; */
+        display: none;
+    }
+    /* .heroImg img {
+        height: 100%;
+        width: 100%;
+    } */
+}
+
+@media (width <= 800px){
+    .heroContent{
+        padding-top: 2rem;
+    }
+    .heroLogo {
+        height: 2.5rem;
+    }
+    .testimonial {
+        border-radius: 0.48rem 1.15rem 1.15rem 1.15rem;
+        /* margin-top: 2rem; */
+    }
+    .swiper .swiper-slide .testimonialPhoto {
+        min-height: 70px;
+        min-width: 60px;
+        border-radius: 0.29rem 0.1rem 0.1rem 0.88rem;
+    }
+    .testimonialPara {
+        margin-top: 0;
+    }
+}
+
+@media (width <= 600px){
+}
+
 
 
 
@@ -337,3 +401,11 @@ header {
         height: 76px;
     }
 }
+
+
+
+/* ----------ABOUT_SECTION---------- */
+#about {
+    background-color: white;
+}
+
