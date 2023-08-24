@@ -506,7 +506,7 @@ header {
     border: 0.5rem solid #2C5FB1;
     border-radius: 50rem;
     margin-bottom: -1.5rem;
-
+    
     position: relative;
     z-index: 100;
 }
@@ -516,6 +516,7 @@ header {
     background-color: #1E7FBC;
     border-radius: 1.5rem;
     width: 100%;
+    flex-grow: 1;
 }
 
 .servicesCardContainer .servicesCard .child2 > p {
