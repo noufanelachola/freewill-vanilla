@@ -530,7 +530,16 @@ header {
     }
 }
 
+@media (width <= 510px){
+    .servicesCardContainer {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+}
+
 @media (width <= 480px){
+    
+
     .servicesCardContainer .servicesCard .child1 {
         height: 100px;
         width: 100px;
