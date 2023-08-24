@@ -538,8 +538,6 @@ header {
 }
 
 @media (width <= 480px){
-    
-
     .servicesCardContainer .servicesCard .child1 {
         height: 100px;
         width: 100px;
