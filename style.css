@@ -44,6 +44,11 @@ body {
     color: white;
     background-color: var(--primary-color);
 }
+.secondaryBtn {
+    color: black;
+    background-color: white;
+}
+
 .appnmntSimpleBtn img {
     height: 0.9rem;
 }
@@ -486,9 +491,12 @@ header {
 
 #services {
     background-color: var(--blue-color);
+    padding-block: 2rem;
 }
 
 .servicesCardContainer {
+    margin-block: 2rem;
+
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     gap: 20px;
@@ -555,6 +563,10 @@ header {
 }
 
 @media (width <= 480px){
+    #services {
+        padding-block: 1rem;
+    }
+
     .servicesCardContainer .servicesCard .child1 {
         height: 100px;
         width: 100px;
