@@ -513,7 +513,7 @@ header {
 
 .servicesCardContainer .servicesCard .child2{
     padding: 1.5rem 2rem;
-    background-color: #1E7FBC;
+    background-color: #000000;
     border-radius: 1.5rem;
     width: 100%;
     flex-grow: 1;
@@ -527,6 +527,13 @@ header {
     .servicesCardContainer .servicesCard .child1 {
         height: 110px;
         width: 110px;
+    }
+}
+
+@media (width <= 510px){
+    .servicesCardContainer {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
     }
 }
 
