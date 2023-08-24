@@ -516,7 +516,6 @@ header {
 
 .servicesCardContainer .servicesCard .child2{
     padding: 1.5rem 2rem;
-    background-color: #1E7FBC;
     border-radius: 1.5rem;
     width: 100%;
     flex-grow: 1;
@@ -531,6 +530,15 @@ header {
     text-align: center;
 }
 
+.servicesCard:nth-child(odd) .child2 {
+    background-color: #1E7FBC;
+    color: white;
+}
+
+.servicesCard:nth-child(even) .child2 {
+    background-color: white;
+    color: black;
+}
 
 @media (width <= 800px){
     .servicesCardContainer .servicesCard .child1 {
