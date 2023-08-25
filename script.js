@@ -32,3 +32,9 @@ const swiper = new Swiper("#swiper-1", {
         loop:true
        
 });
+
+const swiper2 = new Swiper("#team #swiper-2",{
+    slidesPerView: "auto",
+    spaceBetween: 10,
+    // loop: true,
+});
