@@ -572,3 +572,49 @@ header {
         width: 100px;
     }
 }
+
+
+/* ------------TEAM_SECTION------------ */
+#team {
+    padding-block: 1rem;
+}
+
+#team #swiper-2 {
+    margin-top: 1.5rem;
+    overflow-x: hidden;
+}
+
+#team #swiper-2 .swiper-wrapper {
+    display: flex;
+}
+
+#team #swiper-2 .swiper-wrapper .swiper-slide .teamMember{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    background-color: #1496E9;
+    border-radius: 0.75rem;
+
+    height: 400px;
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    padding: 1rem;
+} 
+
+@media (width <= 1000px){
+    #team #swiper-2 .swiper-wrapper .swiper-slide .teamMember{
+        height: 350px;
+        width: 250px;
+    }
+}
+@media (width <= 700px){
+    #team #swiper-2 .swiper-wrapper .swiper-slide .teamMember{
+        height: 300px;
+        width: 200px;
+    }
+}
