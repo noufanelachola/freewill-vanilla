@@ -77,6 +77,10 @@ body {
     font-size: 1.85rem;
     line-height: 1.85rem;
 }
+.namePara{
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
 
 .para {
     font-size: 1.2rem;
@@ -100,6 +104,10 @@ body {
     .name{
         font-size: 1.5rem;
         line-height: 1.5rem;
+    }
+    .namePara{
+        font-size: 0.9rem;
+        line-height: 0.9rem;
     }
     
     .para{
@@ -576,7 +584,7 @@ header {
 
 /* ------------TEAM_SECTION------------ */
 #team {
-    padding-block: 1rem;
+    padding-block: 2rem;
 }
 
 
