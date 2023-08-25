@@ -36,5 +36,9 @@ const swiper = new Swiper("#swiper-1", {
 const swiper2 = new Swiper("#team #swiper-2",{
     slidesPerView: "auto",
     spaceBetween: 10,
-    // loop: true,
+    navigation: {
+        nextEl:".swiper-2-custom-nav .nav-right",
+        prevEl:".swiper-2-custom-nav .nav-left"
+    },
+
 });
