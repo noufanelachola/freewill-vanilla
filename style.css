@@ -584,7 +584,7 @@ header {
 
 /* ------------TEAM_SECTION------------ */
 #team {
-    padding-block: 2rem;
+    padding-block: 1rem;
 }
 
 
@@ -693,5 +693,75 @@ header {
     .swiper-2-custom-nav .nav-right {
         height: 40px;
         width: 40px;
+    }
+}
+
+
+
+/* ----------PROGRAMMES_SECTION----- */
+
+#programmes {
+    padding-block: 1rem;
+}
+
+#programmes .mainChild {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 10px;
+
+    margin-top: 1.5rem;
+}
+
+#programmes .mainChild .programme {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 0.5rem;
+
+    padding: 1rem;
+
+    border-radius: 1.5rem;
+}
+
+#programmes .mainChild .programme1 {
+    background-color: var(--yellow-color);
+}
+#programmes .mainChild .programme2 {
+    background-color: #33A9FF;
+}
+
+
+#programmes .mainChild .programme .child1 {
+    height: 300px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    border-radius: 1rem;
+}
+
+#programmes .mainChild .programme .child2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+#programmes .programmesBtn {
+    background-color: white;
+    margin-top: auto;
+    border-radius: 0.75rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+@media (width <= 510px){
+    #programmes .mainChild {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    #programmes .mainChild .programme .child1 {
+        height: 200px;
     }
 }
