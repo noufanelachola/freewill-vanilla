@@ -595,6 +595,9 @@ header {
     overflow: hidden;
     margin-top: 1.5rem;
 
+    margin-inline: -1rem;
+
+
 }
 
 .swiper-container-wrapper::before,
@@ -701,7 +704,7 @@ header {
 
 /* ----------PROGRAMMES_SECTION----- */
 #programmes {
-    padding-block: 1rem;
+    padding-bottom: 1rem;
 }
 
 #programmes .mainChild {
@@ -709,7 +712,7 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 10px;
 
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 #programmes .mainChild .programme {
@@ -770,8 +773,38 @@ header {
 
 /* ----------GALLERY_SECTION----- */
 #gallery {
-    padding-block: 1rem;
+    padding-bottom: 1rem;
 }
+
+
+#gallery .swiper-container-wrapper-2 {
+    margin-top: 1rem;
+
+    position: relative;
+}
+
+
+.swiper-container-wrapper-2::before,
+.swiper-container-wrapper-2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 5%;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.4;
+    filter: blur(10px);
+    z-index: 1;
+}
+
+.swiper-container-wrapper-2::before {
+    left: 0;
+}
+
+.swiper-container-wrapper-2::after {
+    right: 0;
+}
+
 
 #gallery #swiper-3 {
     overflow-x: hidden;
@@ -790,15 +823,30 @@ header {
     border-radius: 1rem;
 }
 
+#gallery .swiper-3-custom-nav {
+    padding-inline: 0.75rem;
 
+    display: flex;
+    justify-content: space-between;
+
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+@media (width <= 700px){
+    #gallery .galleryPhoto {
+        height: 300px;
+        width: 300px;
+    }
+}
 @media (width <= 500px ){
     #gallery .galleryPhoto {
-        height: 200px;
-        width: 200px;
+        height: 250px;
+        width: 250px;
         border-radius: 0.5rem;
-    
-        /* background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat; */
     }
 }

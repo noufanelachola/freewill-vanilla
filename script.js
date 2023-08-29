@@ -42,7 +42,11 @@ const swiper2 = new Swiper("#team #swiper-2",{
         nextEl:".swiper-2-custom-nav .nav-right",
         prevEl:".swiper-2-custom-nav .nav-left"
     },
-
+    autoplay: {
+        delay: 1500, 
+        disableOnInteraction: false,
+        stopOnLastSlide: false,
+    },
 });
 
 
@@ -50,5 +54,13 @@ const swiper2 = new Swiper("#team #swiper-2",{
 const swiper3 = new Swiper("#gallery #swiper-3",{
     slidesPerView: "auto",
     spaceBetween: 10,
-
+    navigation: {
+        nextEl:".swiper-3-custom-nav .nav-right",
+        prevEl:".swiper-3-custom-nav .nav-left"
+    },
+    autoplay: {
+        delay: 1500, 
+        disableOnInteraction: false,
+        stopOnLastSlide: false,
+    },
 });
