@@ -916,6 +916,9 @@ input[type="submit"] {
     margin-top: 1rem;
     background-color: var(--primary-color);
     color: white;
+
+    display: flex;
+    justify-content: center;
 }
 input:focus{
     border: 0.15rem solid var(--primary-color);
@@ -942,5 +945,43 @@ input:focus{
         display: flex;
         flex-direction: column;
         gap: 0;
+    }
+}
+
+
+/* ----------FOOTER---------- */
+footer{
+    background-color: var(--blue-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    padding-block: 1rem;
+}
+
+footer .footerLogo{
+    height: 7rem;
+}
+footer .footerLogo img {
+    height: 100%;
+}
+
+footer nav {
+    display: flex;
+    gap: 0.75rem;
+}
+footer nav a {
+    color: white;
+    text-decoration: none;
+}
+footer nav a:hover {
+    color: #ececec;
+}
+
+@media (width <= 500px) {
+    footer .footerLogo{
+        height: 5rem;
     }
 }
