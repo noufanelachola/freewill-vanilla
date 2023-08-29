@@ -38,15 +38,24 @@ const swiper = new Swiper("#swiper-1", {
 const swiper2 = new Swiper("#team #swiper-2",{
     slidesPerView: "auto",
     spaceBetween: 10,
+    loop: true,
+    centeredSlides: true,
     navigation: {
         nextEl:".swiper-2-custom-nav .nav-right",
         prevEl:".swiper-2-custom-nav .nav-left"
     },
     autoplay: {
         delay: 1500, 
-        disableOnInteraction: false,
+        disableOnInteraction: true,
         stopOnLastSlide: false,
-    },
+    }, 
+    breakpoints : {
+        1000 : {
+            centeredSlides: false,
+            loop: false
+        }
+    }
+      
 });
 
 
@@ -54,13 +63,21 @@ const swiper2 = new Swiper("#team #swiper-2",{
 const swiper3 = new Swiper("#gallery #swiper-3",{
     slidesPerView: "auto",
     spaceBetween: 10,
+    loop: true,
+    centeredSlides: true,
     navigation: {
         nextEl:".swiper-3-custom-nav .nav-right",
         prevEl:".swiper-3-custom-nav .nav-left"
     },
     autoplay: {
         delay: 1500, 
-        disableOnInteraction: false,
+        disableOnInteraction: true,
         stopOnLastSlide: false,
     },
+    breakpoints : {
+        1000 : {
+            centeredSlides: false,
+            loop: false
+        }
+    }
 });
