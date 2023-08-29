@@ -746,7 +746,7 @@ header {
 
     padding: 1rem;
 
-    border-radius: 1.5rem;
+    border-radius: 0.75rem;
 }
 
 #programmes .mainChild .programme1 {
@@ -764,7 +764,7 @@ header {
     background-position: center;
     background-size: cover;
 
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 
 #programmes .mainChild .programme .child2 {
