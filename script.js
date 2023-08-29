@@ -33,6 +33,8 @@ const swiper = new Swiper("#swiper-1", {
        
 });
 
+
+// -----------SWIPER_2----------
 const swiper2 = new Swiper("#team #swiper-2",{
     slidesPerView: "auto",
     spaceBetween: 10,
@@ -40,5 +42,13 @@ const swiper2 = new Swiper("#team #swiper-2",{
         nextEl:".swiper-2-custom-nav .nav-right",
         prevEl:".swiper-2-custom-nav .nav-left"
     },
+
+});
+
+
+// -----------SWIPER_3----------
+const swiper3 = new Swiper("#gallery #swiper-3",{
+    slidesPerView: "auto",
+    spaceBetween: 10,
 
 });

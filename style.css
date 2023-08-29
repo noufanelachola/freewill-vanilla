@@ -700,7 +700,6 @@ header {
 
 
 /* ----------PROGRAMMES_SECTION----- */
-
 #programmes {
     padding-block: 1rem;
 }
@@ -764,5 +763,42 @@ header {
     }
     #programmes .mainChild .programme .child1 {
         height: 200px;
+    }
+}
+
+
+
+/* ----------GALLERY_SECTION----- */
+#gallery {
+    padding-block: 1rem;
+}
+
+#gallery #swiper-3 {
+    overflow-x: hidden;
+}
+#gallery .swiper-wrapper {
+    display: flex;
+}
+#gallery .galleryPhoto {
+    height: 430px;
+    width: 430px;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 1rem;
+}
+
+
+@media (width <= 500px ){
+    #gallery .galleryPhoto {
+        height: 200px;
+        width: 200px;
+        border-radius: 0.5rem;
+    
+        /* background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; */
     }
 }
