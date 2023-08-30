@@ -549,26 +549,26 @@
             <p class="title primaryText">Book Your <span class="titleBold">Appointment</span></p>
             <p class="para">| Lets talk and fix it!</p>
 
-            <form class="form" action="">
+            <form class="form" id="appointment" action="https://formsubmit.co/23e04d7ad334b7918de29e1f7ce98c49" method="POST">
                 
                 <div class="form-group primaryText para">
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" >
+                    <input type="email" id="email" name="email" >
                 </div>
                 
                 <div class="form-group primaryText para">
                     <label for="fullName">Full Name</label>
-                    <input type="text" id="fullName" >
+                    <input type="text" id="fullName" name="fullName">
                 </div>
                 
                 <div class="child-form">
                     <div class="child-form-group primaryText para">
                         <label for="phoneNumber">Phone Number</label>
-                        <input type="number" id="phoneNumber" >
+                        <input type="number" id="phoneNumber" name="phoneNumber">
                     </div>
                     <div class="child-form-group primaryText para">
                         <label for="date">Appointment Date</label>
-                        <input type="date" id="date" >
+                        <input type="date" id="date" name="date">
                     </div>
                 </div>
 
@@ -599,7 +599,7 @@
     </main>
 
 
-    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
