@@ -118,7 +118,7 @@ body {
     padding: 0 1rem;
 }
 
-@media (width <= 800px) {
+@media (max-width: 800px) {
     .title {
         font-size: 2.5rem;
         line-height: 2.5rem;
@@ -137,7 +137,7 @@ body {
         font-size: 0.9rem;
     }
 }
-@media (width <= 320px) {
+@media (max-width: 320px) {
     .title{
         font-size: 2rem;
         line-height: 2rem;
@@ -221,7 +221,7 @@ header {
 
 
 
-@media (width <= 810px){
+@media (max-width: 810px){
     .links {
         position: fixed;
         z-index: 1000;
@@ -266,7 +266,7 @@ header {
     }
 }
 
-@media (width <= 480px){
+@media (max-width: 480px){
     .headerBtn {
         display: none;
     }
@@ -382,7 +382,7 @@ header {
     width: 100%;
 }
 
-@media (width <= 1140px) {
+@media (max-width: 1140px) {
     .heroContent{
         min-height: 100dvh;
     }
@@ -407,7 +407,7 @@ header {
     } */
 }
 
-@media (width <= 800px){
+@media (max-width: 800px){
     .heroContent{
         padding-top: 2rem;
     }
@@ -501,7 +501,7 @@ header {
 }
 
 
-@media (width <= 700px){
+@media (max-width: 700px){
     .aboutMain {
         flex-direction: column-reverse;
         margin-top: 1rem;
@@ -580,21 +580,21 @@ header {
     color: black;
 }
 
-@media (width <= 800px){
+@media (max-width: 800px){
     .servicesCardContainer .servicesCard .child1 {
         height: 110px;
         width: 110px;
     }
 }
 
-@media (width <= 510px){
+@media (max-width: 510px){
     .servicesCardContainer {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         gap: 20px;
     }
 }
 
-@media (width <= 480px){
+@media (max-width: 480px){
     #services {
         padding-block: 1rem;
     }
@@ -694,7 +694,7 @@ header {
     cursor: pointer;
 }
 
-@media (width <= 1000px){
+@media (max-width: 1000px){
     #team #swiper-2 .swiper-wrapper .swiper-slide .teamMember{
         height: 350px;
         width: 250px;
@@ -706,13 +706,13 @@ header {
         width: 50px;
     }
 }
-@media (width <= 700px){
+@media (max-width: 700px){
     #team #swiper-2 .swiper-wrapper .swiper-slide .teamMember{
         height: 300px;
         width: 200px;
     }
 }
-@media (width <= 500px){
+@media (max-width: 500px){
     .swiper-2-custom-nav {
         padding-inline: 0.5rem;
     }
@@ -783,7 +783,7 @@ header {
     padding: 1rem 0;
 }
 
-@media (width <= 510px){
+@media (max-width: 510px){
     #programmes .mainChild {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
@@ -860,7 +860,7 @@ header {
     transform: translateY(-50%);
 }
 
-@media (width <= 1000px){
+@media (max-width: 1000px){
     #team #swiper-2 .swiper-wrapper .swiper-slide .teamMember{
         height: 350px;
         width: 250px;
@@ -873,13 +873,13 @@ header {
     }
 }
 
-@media (width <= 700px){
+@media (max-width: 700px){
     #gallery .galleryPhoto {
         height: 300px;
         width: 300px;
     }
 }
-@media (width <= 500px ){
+@media (max-width: 500px ){
     #gallery .galleryPhoto {
         height: 250px;
         width: 250px;
@@ -945,7 +945,7 @@ input:focus{
     flex-grow: 1;
 }
 
-@media (width <= 500px) {
+@media (max-width: 500px) {
     .child-form {
         display: flex;
         flex-direction: column;
@@ -985,7 +985,7 @@ footer nav a:hover {
     color: #ececec;
 }
 
-@media (width <= 500px) {
+@media (max-width: 500px) {
     footer .footerLogo{
         height: 5rem;
     }
