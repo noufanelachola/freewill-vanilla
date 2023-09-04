@@ -132,7 +132,7 @@ body {
         font-size: 0.9rem;
         line-height: 0.9rem;
     }
-    
+
     .para{
         font-size: 0.9rem;
     }
@@ -185,7 +185,7 @@ header {
     color: var(--primary-color);
 }
 .linkBtn {
-    display: none; 
+    display: none;
 }
 .linkBtn p {
     color: #2184C2;
@@ -290,18 +290,18 @@ header {
     display: flex;
     flex-direction: row;
     height: 100%;
-    
-    
+
+
 }
 
 .heroCont {
     width: 60%;
     min-height: 80%;
-    
+
     display: flex;
     flex-direction: column;
-    
-    
+
+
     position: relative;
     z-index: 100;
 }
@@ -341,7 +341,7 @@ header {
     /* min-width: 100%; */
     overflow: hidden;
 
-} 
+}
 .swiper .swiper-slide .testimonialCont{
     display: flex;
     flex-grow: 1;
@@ -376,7 +376,7 @@ header {
     width: 40%;
     /* min-height: 80%;    */
     position: relative;
-    z-index: 0; 
+    z-index: 0;
 }
 .heroImg img{
     width: 100%;
@@ -493,7 +493,7 @@ header {
     min-width: 300px;
     min-height: 100%;
     border-radius: 1rem;
-    
+
     background-image: url(assets/aboutImg.png);
     background-position: center;
     background-size: cover;
@@ -506,18 +506,18 @@ header {
         flex-direction: column-reverse;
         margin-top: 1rem;
     }
-    
+
     .aboutChild1{
         max-width: 100%;
     }
-    
+
     .aboutChild2{
         min-height: 300px;
         min-width: 100%;
     }
-    
+
 }
-    
+
 
 /* ----------SERVICES_SECTION---------- */
 
@@ -549,7 +549,7 @@ header {
     border: 0.5rem solid #2C5FB1;
     border-radius: 50rem;
     margin-bottom: -1.5rem;
-    
+
     position: relative;
     z-index: 100;
 }
@@ -673,7 +673,7 @@ header {
     justify-content: end;
 
     padding: 1rem;
-} 
+}
 
 .swiper-2-custom-nav {
     display: flex;
@@ -758,13 +758,19 @@ header {
 
 
 #programmes .mainChild .programme .child1 {
-    height: 300px;
+    /* height: 300px; */
 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
+    /* background-repeat: no-repeat;
+    background-position: center; */
+    /* background-size: cover; */
+    /* background-size: 100% auto; */
     border-radius: 0.5rem;
+
+    overflow: hidden;
+}
+#programmes .mainChild .programme .child1 img {
+    height: 100%;
+    width: 100%;
 }
 
 #programmes .mainChild .programme .child2 {
@@ -988,5 +994,12 @@ footer nav a:hover {
 @media (max-width: 500px) {
     footer .footerLogo{
         height: 5rem;
+    }
+}
+@media (max-width: 350px) {
+    footer nav {
+        display: flex;
+        gap: 0.25rem;
+        font-size: 0.8rem;
     }
 }
