@@ -787,19 +787,16 @@ header {
 
 
 #programmes .mainChild .programme .child1 {
-    /* height: 300px; */
+    display: flex;
+    flex-grow: 0;
 
-    /* background-repeat: no-repeat;
-    background-position: center; */
-    /* background-size: cover; */
-    /* background-size: 100% auto; */
     border-radius: 0.5rem;
 
     overflow: hidden;
 }
 #programmes .mainChild .programme .child1 img {
-    height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 #programmes .mainChild .programme .child2 {
@@ -822,9 +819,9 @@ header {
     #programmes .mainChild {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
-    #programmes .mainChild .programme .child1 {
+    /* #programmes .mainChild .programme .child1 {
         height: 200px;
-    }
+    } */
 }
 
 
