@@ -109,6 +109,11 @@ body {
     font-size: 1.2rem;
     line-height: 1.2rem;
 }
+.nameDesig{
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-top: 0.4rem;
+}
 
 .para {
     font-size: 1.2rem;
@@ -136,6 +141,10 @@ body {
     .namePara{
         font-size: 0.9rem;
         line-height: 0.9rem;
+    }
+    .nameDesig{
+        font-size: 0.8rem;
+        line-height: 0.8rem;
     }
 
     .para{
